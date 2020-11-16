@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+#trans, #premier {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#container, #echelle, #deux, #oblique{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#container {
+    background-color: yellow;
+    transform: rotate(-35deg);
+}
+
+p {
+    transform: rotate(90deg);
+}
+
+#trans {
+    transform: rotate(-35deg);
+}
+
+#premier {
+    background-color: blue;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+}
+
+#echelle {
+    background-color: yellow;
+    transform: scale(1.5);
+}
+
+#deux {
+    background-color: blue;
+    z-index: 1;
+    position: absolute;
+    top: 83%;
+}
+
+#oblique {
+    background-color: yellow;
+    transform: skewX(30deg) skewY(25deg);
+}
